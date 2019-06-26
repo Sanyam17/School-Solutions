@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="sam.js"></script>
+	<link rel="stylesheet" type="text/css" href="samstyle.css">
+</head>
+<body>
+	<div id="login-box">
+		<div class="login-box">
+           <img src="user-512.png" class="avatar">
+           <h1>Login Here</h1>
+               <form>
+               <p>Username</p>
+                <input type="text" name="username" placeholder="Enter Username">
+               <p>Password</p>
+                 <input type="password" name="password" placeholder="Enter Password">
+                 <input type="button" name="submit" value="Login" onclick="dash()"><br>
+                   <a onclick="index()">New User</a><br>
+                   <a onclick="password()">Forget Password</a>
+                </form>
+        </div>
+	</div>
+	<div id ="signup-box" style="display: none;">
+		<div class="index">
+			<form id="registration" method="post" action="sam.html">
+				<h2>Student Signup</h2><br>
+				<input type="text" name="fname" id="name" placeholder="Enter your first name"><br>
+				<input type="text" name="lname" id="name" placeholder="Enter your last name"><br>
+				<input type="email" name="email" id="name" placeholder="Enter your email"><br>
+				<input type="password" name="password" id="name" placeholder="Enter your password"><br>
+				<input type="submit" name="signup-button" value="Sign Up"><br>
+			</form>
+		</div>
+		<div class="right">
+			<span class="sign">Sign in with <br/>Social Network</span>
+			<button class="Social facebook">Log in with Facebook</button>
+			<button class="Social twitter">Log in with Twitter</button>
+			<button class="Social google">Log in with Google+</button>
+		</div>
+	</div>
+	
+		<div class="password" id="password-box" style="display: none;">
+        <h1>Forgot Password?</h1>
+        <form id="registration" method="post" action="sam.html">
+        <p>Email</p>
+        <input type="text" name="Email" placeholder="Enter valid email">
+        <input type="submit" name="submit" value="Submit">
+            <p>Back to <a href="sam.html"> &nbsp;<u>Login</u></a></p>
+        </form>
+        </div>  
+        
+	<div class="dash" id="dash" style="display: none;">
+	<div id="samnav">
+		<nav>
+		<img src="logo.jpg" width="80" height="60">	
+			<ul>
+				<li><a href="sam.html">Home</a></li>
+				<li><a href="tt.html">Time Table</a></li>
+				<li><a href="faculty.html">Faculty</a></li>
+				<li><a href="fee.html">Fees</a></li>
+				<li><a href="exam.html">Examinations</a></li>
+			</ul>
+		</nav>
+	</div>
+    <style type="text/css">
+	    .content-table{
+	    	background-image: url(6869730-solid-color-wallpaper.jpg);
+	    	border-collapse: collapse;
+	    	margin: 25px 0;
+	    	font-size: 0.9em;
+	    	min-width: 800px;
+	    	border-radius: 5px 5px 0 0;
+	    	overflow: hidden;
+	    	box-shadow: 0 0 20px rgba(0,0,0,0.15);
+	    }
+	    .content-table thead tr{
+	    	background-color: #009879;
+	    	color: #ffffff;
+	    	text-align: left;
+	    	font-weight: bold;
+	    }
+	    .content-table th,
+	    .content-table td{
+	    	padding: 12px 15px;
+	    }
+	    .content-table tbody tr{
+	    	border-bottom: 1px solid #dddddd;
+	    }
+	    .content-table tbody tr: nth-of-type(even){
+	    	background-color: #ffffff;
+	    }
+	    .content-table tbody tr: last-of-type{
+	    	border-bottom: 2px solid #009879;
+	    }
+</style>  
+<body>
+	<center><h1><br>School Dashboard</h1></center>
+	<center><table class="content-table"></center>
+		<thead>
+			<tr>
+				<th>ClassId</th>
+				<th>Class Name</th>
+				<th>Number of Students</th>
+				<th>Class Teacher</th>
+				<th>Contact Number</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>101</td>
+				<td>XII-A</td>
+				<td>30</td>
+				<td>MR.W</td>
+				<td>9845687445</td>
+			</tr>
+			<tr>
+				<td>102</td>
+				<td>XII-B</td>
+				<td>30</td>
+				<td>MR.X</td>
+				<td>9658471236</td>
+			</tr>
+			<tr>
+				<td>103</td>
+				<td>XII-C</td>
+				<td>30</td>
+				<td>MR.Y</td>
+				<td>9784576512</td>
+			</tr>
+			<tr>
+				<td>104</td>
+				<td>XII-D</td>
+				<td>30</td>
+				<td>MR.Z</td>
+				<td>7709654123</td>
+			</tr>
+		</tbody>
+	</table>
+		
+	</div>
+	
+
+</body>
+</html>
